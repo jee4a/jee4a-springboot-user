@@ -4,7 +4,7 @@
 
 1、<br>
 前提：<br>
-需启动服务注册中心：jee4a-springboot-user<br>
+需启动服务注册中心：jee4a-eureka-server <br>
 
 2、<br>
 打包：<br>
