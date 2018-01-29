@@ -83,4 +83,12 @@ public class User {
         result = prime * result + ((getCreateTime() == null) ? 0 : getCreateTime().hashCode());
         return result;
     }
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", nickName=" + nickName + ", phone=" + phone + ", status=" + status + ", createTime="
+				+ createTime + "]";
+	}
+    
+    
 }
