@@ -8,9 +8,9 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableDiscoveryClient
 @ComponentScan("com.jee4a")
 @SpringBootApplication
-public class Jee4aSpringbootUserApplication {
+public class Jee4aUserServiceApplication {
 	
 	public static void main(String[] args) {
-		SpringApplication.run(Jee4aSpringbootUserApplication.class, args);
+		SpringApplication.run(Jee4aUserServiceApplication.class, args);
 	}
 }
