@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.jee4a</groupId>
-	<artifactId>jee4a-springboot-user</artifactId>
+	<artifactId>jee4a-user-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>jee4a-springboot-user</name>
-	<description>jee4a-springboot-user</description>
+	<name>jee4a-user-service</name>
+	<description>jee4a-user-service</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
