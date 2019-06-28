@@ -1,12 +1,9 @@
 package com.jee4a.user.service;
 
-import java.util.Random;
-
 import javax.annotation.Resource;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.stereotype.Service;
 
 import com.jee4a.common.exceptions.ApiException;
