@@ -32,12 +32,11 @@ public class UserController {
 	private Registration registration; // 服务注册
 	@Resource
 	private UserService userService ;
-	
 	@RequestMapping(value="/user/{id}")
 	public User queryByUserId(@PathVariable Integer id) {
 		ServiceInstance instance  = serviceInstance() ;
 		logger.info("/user/{},host:{},service_id:{}",id,instance.getHost(),instance.getServiceId());
-		return userService.queryById(id) ;
+		return  userService.queryById(id) ;
 	}
 	
 	/**
@@ -53,7 +52,7 @@ public class UserController {
 		Thread.sleep(sleepTime);
 		logger.info("sleep time : {}" ,sleepTime );
 		logger.info("/user-1/{},host:{},service_id:{}",id,instance.getHost(),instance.getServiceId());
-		return userService.queryById(id) ;
+		return  userService.queryById(id) ;
 	}
 	
 	public ServiceInstance serviceInstance() {
@@ -66,4 +65,5 @@ public class UserController {
         }
         return null;
     }
+	 
 }

@@ -2,8 +2,6 @@ package com.jee4a.user.service;
 
 import javax.annotation.Resource;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import com.jee4a.common.exceptions.ApiException;
@@ -18,17 +16,9 @@ import com.jee4a.user.manager.UserManager;
 @Service
 public class UserService {
 
-	private final static Logger  logger = LoggerFactory.getLogger(UserService.class) ;
-	
 	@Resource
 	private UserManager userManger ;
 	
-	/**
-	 * 
-	 * 描述     : 
-	 * @author tpeng 2018年1月29日
-	 * @email 398222836@qq.com
-	 */
 	public User queryById(Integer id) {
 		if(id==null || id<0) {
 			throw new ApiException(-10000,"id error") ;
@@ -36,7 +26,4 @@ public class UserService {
 		
 		return userManger.selectByPrimaryKey(id) ;
 	}
-	
-	 
-	
 }
